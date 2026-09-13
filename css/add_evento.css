@@ -1,0 +1,170 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #e5e5e5;
+    background-color: #575757;
+    background-image: url('../img/Fundo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.register {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 40px;
+    border-radius: 10px;
+    color: white;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.register input,
+.register select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 16px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.register input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+/* Estilo do select */
+.register select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+.register select option {
+    background-color: #575757;
+    color: white;
+}
+
+/* Estilo para o input file */
+.register input[type="file"] {
+    width: 100%;
+    padding: 0;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 14px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    display: block;
+}
+
+.register input[type="file"]::file-selector-button {
+    background-color: #652F00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 16px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.register input[type="file"]::file-selector-button:hover {
+    background-color: #DFC08D;
+    color: #652F00;
+}
+
+/* Estilo para o botão de envio */
+.register button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: #652F00;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.register button:hover {
+    background-color: #DFC08D;
+    color: #652F00;
+    transform: scale(1.1);
+}
+
+.register a {
+    color: #DFC08D;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.register a:hover {
+    color: #FFF;
+}
+
+.margem-botao {
+    margin-bottom: 25px;
+}
+
+.status-active {
+    display: flex;
+    align-items: center;
+}
+
+.status-active input {
+    margin: 0;
+    width: auto;
+}
+
+.status-active-father {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.status-active-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.status-active-container label {
+    margin: 0;
+}
+
+p {
+    margin-top: 10px;
+}
+
+textarea {
+    width: 100% !important;
+    overflow: auto;
+    resize: vertical;
+}

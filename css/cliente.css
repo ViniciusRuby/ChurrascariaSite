@@ -1,0 +1,98 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #e5e5e5;
+    background-color: #575757;
+    background-image: url('../img/Fundo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container-conteudo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    flex-wrap: nowrap;
+    flex-direction: column-reverse;
+    position: relative;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 10px;
+    background-color: rgba(40, 40, 40);
+    border-radius: 0 10px 0 0;
+}
+
+.form-control {
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.box-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    width: 100%;
+}
+
+.btn-dark {
+    padding: 6px 12px;
+    margin-left: 10px;
+    background-color: #343a40;
+    border: none;
+    color: #fff;
+    border-radius: .25rem;
+}
+
+.btn-dark:hover {
+    background-color: #23272b;
+}
+
+.table-responsive {
+    margin-top: 20px;
+}
+
+.voltar {
+    background-color:rgba(40, 40, 40);
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.voltar:hover {
+    background-color: #555;
+    color: #fff;
+    text-decoration: none;
+}
+
+.form-inline{
+    width: -webkit-fill-available !important;
+    display: flex !important;
+    justify-content: center !important;
+}
