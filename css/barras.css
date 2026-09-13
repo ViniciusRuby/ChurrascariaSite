@@ -1,0 +1,60 @@
+.barra-superior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 24px 20px 20px 20px;
+  top: 0;
+  position: fixed;
+  background: #1a1a1a;
+  width: 100%;
+  z-index: 1000;
+}
+
+.barra-superior h2 {
+  margin: 0;
+}
+
+.barra-superior img {
+  width: 40px;
+}
+
+.barra-superior > div {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.barra-superior a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.barra-superior a:hover {
+  color: #adadad;
+}
+
+.barra-superior-brand {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-right: auto;
+}
+
+.barra-inferior {
+  background-color: #0c0c0c;
+  color: #292929;
+  padding: 3rem 0;
+  width: 100%;
+  text-align: center;
+  margin-top: auto;
+}
+
+.barra-inferior p {
+  font-size: 1;
+  color: #e5e5e5;
+  margin-bottom: 0;
+}
