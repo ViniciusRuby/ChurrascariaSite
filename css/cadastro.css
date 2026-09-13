@@ -1,0 +1,173 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #e5e5e5;
+    background-color: #575757;
+    background-image: url('../img/Fundo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.register {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 40px;
+    border-radius: 10px;
+    color: white;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.register select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+.register select option {
+    background-color: #575757;
+    color: white;
+}
+
+.register input[type="file"] {
+    width: 100%;
+    padding: 0;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 14px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    display: block;
+}
+
+.register input[type="file"]::file-selector-button {
+    height: 100%;
+    background-color: #652F00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 16px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.register input[type="file"]::file-selector-button:hover {
+    background-color: #DFC08D;
+    color: #652F00;
+}
+
+.input-container {
+    position: relative;
+    margin: 20px auto;
+    width: 100%;
+}
+
+.input-container input[type="text"],
+.input-container input[type="email"],
+.input-container input[type="password"],
+.input-container input[type="tel"],
+.input-container input[type="date"],
+.input-container input[type="number"] {
+    cursor: text;
+    font-size: 16px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 10px 0;
+    background-color: transparent;
+    outline: none;
+    color: white;
+}
+
+.input-container .label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    color: #ccc;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.input-container input:focus ~ .label,
+.input-container input:valid ~ .label {
+    top: -20px;
+    font-size: 14px;
+    color: #DFC08D;
+}
+
+.input-container .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #DFC08D;
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+}
+
+.input-container input:focus ~ .underline,
+.input-container input:valid ~ .underline {
+    transform: scaleX(1);
+}
+
+.register button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: #652F00;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.register button:hover {
+    background-color: #DFC08D;
+    color: #652F00;
+    transform: scale(1.1);
+}
+
+.register a {
+    color: #DFC08D;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.register a:hover {
+    color: #FFF;
+}
+
+textarea {
+    background-color: #1c1c1c;
+    width: 100%;
+    overflow: auto;
+    resize: vertical;
+    color: white;
+    margin-top: 45px;
+}

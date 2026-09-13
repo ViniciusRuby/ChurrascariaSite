@@ -1,0 +1,226 @@
+.reserva-container {
+  display: flex;
+  align-items: stretch;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+}
+
+.reserva-image {
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+label {
+  display: inline-block;
+  margin-top: 1.5rem;
+  margin-bottom: none;
+}
+
+.reserva-content {
+  flex: 1;
+  padding: 20px;
+  color: white;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  background: #652F00;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity .15s ease-in-out;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #c75d00;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background: #f8f9fa;
+}
+
+input[type="number"],
+select {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+input[type="date"],
+input[type="time"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="time"],
+select {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+input[type="time"]::placeholder,
+select::placeholder {
+  color: #bbb;
+}
+
+input[type="time"]:focus,
+select:focus {
+  border-color: #888;
+  background-color: #555;
+}
+
+input[type="date"],
+select {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+input[type="date"]::placeholder,
+select::placeholder {
+  color: #bbb;
+}
+
+input[type="date"]:focus,
+select:focus {
+  border-color: #888;
+  background-color: #555;
+}
+
+input[type="date"] {
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 10px;
+  background-color: #652F00;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #DFC08D;
+  color: #652F00;
+  transform: scale(1.1);
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #e5e5e5;
+  background-color: #575757;
+  background-image: url('../img/Fundo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  opacity: 1;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.margem-botao {
+  margin-bottom: 25px;
+}
+
+.status-active {
+  display: flex;
+  align-items: center;
+}
+
+.status-active input {
+  margin: 0;
+  width: auto;
+}
+
+.status-active-father {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.status-active-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.status-active-container label {
+  margin: 0;
+}
+
+.espaco-botao {
+  margin-top: 20px;
+}
+
+.valor-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+.valor-container label {
+  margin: 0;
+  color: #fff;
+}
+
+#valor_reserva {
+  text-align: right;
+  color: #dfc08d;
+  font-weight: bold;
+}
+
+.text-muted {
+  font-weight: bold;
+  color: #6c757d !important;
+}
+
+.reserva-content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.imagem-container {
+  flex: 1;
+  margin-right: 20px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.imagem-reserva {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.form-container {
+  flex: 1;
+}

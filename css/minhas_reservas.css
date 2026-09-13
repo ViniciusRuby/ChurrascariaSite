@@ -1,0 +1,94 @@
+.container-reservas {
+  background-color: #161616 !important;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  max-width: 90%;
+  margin: 100px auto;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url('../img/Fundo.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding-top: 50px;
+}
+
+
+.container-reservas h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.col-lg-3 {
+  flex: 1 0 240px;
+  max-width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding: 10px;
+}
+
+.reserva-card {
+  border: 1px solid #6f6c6c !important;
+  border-radius: 5px;
+  padding: 20px;
+  transition: transform 0.3s;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+  background-color: #313131 !important;
+  color: #ffffff !important;
+  min-height: 150px;
+  min-width: 245px !important;
+  opacity: 1;
+}
+
+.reserva-card:hover{
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .col-lg-3 {
+      max-width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .col-lg-3 {
+      max-width: 100%;
+  }
+}
+
+.valor {
+  font-weight: bold;
+}
+
+.reserva-card h5 {
+  margin-bottom: 10px;
+}
+
+.valor {
+  font-weight: bold;
+}
+
+.container.mt-5 .row .col-lg-3 {
+  max-width: 100%;
+}
+
+p {
+  margin-top: 20px !important;
+  margin-bottom: 1rem !important;
+}
+

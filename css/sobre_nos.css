@@ -1,0 +1,86 @@
+.sobre-container {
+  display: flex;
+  align-items: stretch;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+}
+
+.sobre-image {
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.sobre-content {
+  flex: 1;
+  padding: 20px;
+  color: white;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 10px;
+  background-color: #652F00;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color:  #1b0c00;
+  color: #e5e5e5;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  opacity: 1;
+  justify-content: center;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.margem-botao {
+  margin-bottom: 25px;
+}
+
+.status-active {
+  display: flex;
+  align-items: center;
+}
+
+.status-active input {
+  margin: 0;
+  width: auto;
+}
+
+.status-active-father {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.status-active-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.status-active-container label {
+  margin: 0;
+}
+
+.espaco-botao {
+  margin-top: 20px;
+}
